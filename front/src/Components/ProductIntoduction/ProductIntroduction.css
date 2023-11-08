@@ -1,0 +1,45 @@
+.ProductIntroductionFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ProductIntroductionFlex h1 {
+  font-size: 3rem;
+  padding-top: 4rem;
+  /* color: white; */
+}
+.ProductIntroductionFlex div {
+  color: white;
+}
+
+.ProductIntroductionDesc {
+  margin-top: 6rem;
+  font-size: 2rem;
+  max-width: 1200px;
+  display: flex;
+  text-align: justify;
+}
+.ProductIntroduction {
+  margin-top: 11rem;
+  /* font-family: Vazirmatn-regular; */
+  direction: rtl;
+  background-image: url(./img/ProductIntroPic.jpg);
+
+  background-size: cover;
+  padding-bottom: 6rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+@media only screen and (max-width: 1220px) {
+  .ProductIntroductionDesc {
+    padding: 0 4rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 447px) {
+  .ProductIntroductionDesc {
+    font-size: 1.2rem;
+  }
+}

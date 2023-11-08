@@ -1,0 +1,108 @@
+.Asnaad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  text-align: right;
+  /* font-family: VazirRegular; */
+}
+.AsnaadFlex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Asnaad h1 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.Asnaad div {
+  font-size: 1.7rem;
+}
+.AsnaadDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 900px;
+}
+.AsnaadDesc div {
+  text-align: justify;
+  direction: rtl;
+}
+.AsnaadDesc2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  max-width: 900px;
+}
+.AsnaadDesc2 div {
+  text-align: justify;
+  direction: rtl;
+}
+.AsnaadDesc3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  max-width: 900px;
+}
+.AsnaadDesc3 div {
+  text-align: justify;
+  direction: rtl;
+}
+.Komite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  max-width: 900px;
+}
+.Komite div {
+  text-align: justify;
+  direction: rtl;
+}
+@media only screen and (max-width: 930px) {
+  .AsnaadDesc {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .AsnaadDesc div {
+    font-size: 1.2rem;
+  }
+  .AsnaadDesc2 {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .AsnaadDesc2 div {
+    font-size: 1.2rem;
+  }
+  .AsnaadDesc3 {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .AsnaadDesc3 div {
+    font-size: 1.2rem;
+  }
+  .Komite {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .Komite div {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 406px) {
+  .AsnaadFlex h1 {
+    padding: 0 1rem;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .AsnaadFlex h1 {
+    font-size: 1.4rem;
+  }
+}

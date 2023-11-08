@@ -1,0 +1,50 @@
+.Takhsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  /* font-family: VazirRegular; */
+}
+.TakhsisFlex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  background-color: #a7f3d0;
+  border-radius: 2rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.Takhsis h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.Takhsis div {
+  font-size: 1.6rem;
+}
+.TakhsisDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  text-align: justify;
+  direction: rtl;
+}
+.TakhsisDesc div {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 585px) {
+  .TakhsisFlex h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .TakhsisDesc div {
+    font-size: 1.2rem;
+  }
+}

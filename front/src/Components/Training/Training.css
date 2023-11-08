@@ -1,0 +1,14 @@
+.Container {
+  /* max-width: 1200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.VideoPlayer {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  border: 1px solid black;
+}

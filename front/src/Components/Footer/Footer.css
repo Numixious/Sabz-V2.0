@@ -1,0 +1,90 @@
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  width: 100%;
+  height: auto;
+  background-color: #5f52e2;
+  direction: rtl;
+}
+.Footer div {
+  color: white;
+}
+.FooterFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FooterItems {
+  margin: 1rem 6rem;
+}
+.FooterItems .ContactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContactInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Address {
+  margin-top: 1rem;
+}
+.LinksProps {
+  margin-top: 1rem;
+}
+.Copyright {
+  padding: 2rem;
+  width: 100%;
+  background-color: white;
+}
+@media only screen and (max-width: 706px) {
+  .FooterFlex {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ContactInfo {
+    padding-bottom: 4rem;
+  }
+  .Links {
+    padding-bottom: 4rem;
+  }
+}
+.First {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Second {
+  margin-top: 2rem;
+}
+.Address1 {
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: right;
+  margin-top: 1rem;
+  padding: 0.2rem;
+}
+.PostalCode {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ContactUs {
+  justify-content: center;
+  align-items: center;
+}

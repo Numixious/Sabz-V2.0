@@ -1,0 +1,53 @@
+.Dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  /* font-family: VazirRegular; */
+}
+.DasboardFlex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Dashboard h1 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.Dashboard div {
+  font-size: 1.7rem;
+}
+.DashboardDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+}
+.DashboardDesc div {
+  text-align: justify;
+  direction: rtl;
+}
+@media only screen and (max-width: 1100px) {
+  .DasboardFlex h1 {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (max-width: 437px) {
+  .DasboardFlex {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 585px) {
+  .DashboardDesc div {
+    flex-direction: column;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+  .DasboardFlex h1 {
+    font-size: 1.5rem;
+  }
+}

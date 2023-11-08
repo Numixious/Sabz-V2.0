@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "VazirRegular";
+  src: local("Vazirmatn-Regular"), url("./Vazirmatn-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "VazirMedium";
+  src: local("Vazirmatn-Medium"), url("./Vazirmatn-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "VazirThin";
+  src: local("Vazirmatn-Thin"), url("./Vazirmatn-Thin.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Tanha";
+  src: local("Tanha"), url("./Tanha.woff") format("woff");
+}
