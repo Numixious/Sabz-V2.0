@@ -13,37 +13,50 @@ import LogInImg from "./ProfileImg";
 import rtlPlugin from "stylis-plugin-rtl";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import Dashboard from "../Dashboard-Profile/Dashboard";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 function Profile() {
+  const [token, setToken] = useState(null);
+  const captchaRef = useRef(null);
+
+  const onLoad = () => {
+    // this reaches out to the hCaptcha JS API and runs the
+    // execute function on it. you can use other functions as
+    // documented here:
+    // https://docs.hcaptcha.com/configuration#jsapi
+    captchaRef.current.execute();
+  };
   const navigate = useNavigate();
   const [data, setData] = useState({
     email: "",
     password: "",
   });
+  useEffect(() => {
+    if (token) console.log(`hCaptcha Token: ${token}`);
+  }, [token]);
 
   const loginUser = async (e) => {
     e.preventDefault();
     const { email, password } = data;
     try {
-      const { data } = await axios.post(
-        "https://greensystemsbackend.iran.liara.run/Profile",
-        {
-          email,
-          password,
-        }
-      );
+      const { data } = await axios.post("/Profile", {
+        email,
+        password,
+      });
       if (data.error) {
         toast.error(data.error);
       } else {
         toast.success("ورود به حساب کاربری با موفقیت انجام شد");
 
         setData({});
-        navigate("/");
+        navigate("/Dashboard");
       }
+      if ()
     } catch (error) {
       console.log(error);
     }
@@ -79,6 +92,15 @@ function Profile() {
                     setData({ ...data, password: e.target.value })
                   }
                 ></input>
+
+                <HCaptcha
+                  sitekey="05920a9d-46e2-49bc-a05d-2a483fb4e355"
+                  onLoad={onLoad}
+                  onVerify={setToken}
+                  ref={captchaRef}
+                  size="normal"
+                />
+
                 <button type="submit">ورود</button>
               </form>
             </div>

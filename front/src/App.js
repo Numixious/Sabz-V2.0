@@ -8,8 +8,9 @@ import Register from "./Components/Register/Register";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "./context/userContext";
+import Dashboard from "./Components/Dashboard-Profile/Dashboard";
 
-axios.defaults.baseURL = "https://greensystemsbackend.iran.liara.run/";
+axios.defaults.baseURL = "http://localhost:8000";
 axios.defaults.withCredentials = true;
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="Training" element={<Training />} />
           <Route path="ProductIntroduction" element={<ProductIntroduction />} />
           <Route path="Register" element={<Register />} />
+          <Route path="Dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </div>
