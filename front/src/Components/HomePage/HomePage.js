@@ -11,6 +11,7 @@ import Permission from "../Permission/Permission";
 import ContactUs from "../ContactUs/ContactUs";
 import Footer from "../Footer/Footer";
 import ScrollToTop from "react-scroll-to-top";
+import Certificate from "../Certificate/Certificate";
 // import ContactForm from "../ContactUs/ContactForm";
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
         <Asnaad />
         <Komite1 />
         <Permission />
+        <Certificate />
         <ContactUs />
         <Footer />
         {/* <ContactForm /> */}

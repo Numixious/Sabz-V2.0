@@ -1,0 +1,51 @@
+.Certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  text-align: right;
+  /* font-family: VazirRegular; */
+}
+.CertificateFlex {
+  display: flex;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+  background-color: #a7f3d0;
+  border-radius: 2rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.Certificate h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.Certificate div {
+  font-size: 1.6rem;
+}
+.CertificateImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  border-radius: 1rem;
+}
+.Komite1Desc div {
+  text-align: justify;
+  direction: rtl;
+}
+.CertificateImg2 {
+  margin-top: 2rem;
+}
+.CertificateFanni {
+  margin-top: 2rem;
+}
+.CertificateFlex {
+  border-radius: 1rem;
+}
