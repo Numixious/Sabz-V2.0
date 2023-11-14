@@ -54,9 +54,8 @@ function Profile() {
         toast.success("ورود به حساب کاربری با موفقیت انجام شد");
 
         setData({});
-        navigate("/Dashboard");
+        navigate("/");
       }
-      if ()
     } catch (error) {
       console.log(error);
     }
