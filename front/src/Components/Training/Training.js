@@ -9,7 +9,7 @@ function Training() {
   return (
     <Layout>
       <div className="Container">
-        <ReactPlayer ref={playerRef} url={VIDEO_PATH} controls={true} />
+        <h1>در حال توسعه میباشد</h1>
       </div>
     </Layout>
   );

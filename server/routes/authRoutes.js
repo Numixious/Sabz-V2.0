@@ -13,7 +13,7 @@ const {
 router.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: "https://greensystems.ir:3000",
   })
 );
 router.get("/", test);

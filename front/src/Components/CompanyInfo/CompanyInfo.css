@@ -1,0 +1,145 @@
+.CompanyInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CompanyInfoFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CompanyInfoLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  direction: rtl;
+  flex-direction: column;
+  margin-left: 4rem;
+  margin-top: 10rem;
+  /* font-size: 2rem; */
+  /* border: 1px solid black; */
+}
+.CompanyInfoRight {
+  margin-top: 10rem;
+}
+.InfoText {
+  text-decoration: double;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.InfoBox {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 1000px;
+  height: 500px;
+  background-color: #dff7e7;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.InfoBoxHeader {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-right: 2.5rem;
+}
+.FirstRowDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 3rem 0 3rem;
+  font-size: 1.5rem;
+}
+.MarginLeftDetails {
+  margin-left: 4rem;
+}
+.DetailContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  direction: rtl;
+  flex-direction: column;
+}
+.LastRowDetails {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  direction: rtl;
+  flex-direction: row;
+}
+.Address {
+  text-align: right;
+}
+.DetailContainer {
+  margin-top: 1.2rem;
+}
+@media only screen and (max-width: 1894px) {
+  .InfoBox {
+    width: 800px;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 1684px) {
+  .InfoBox {
+    width: 600px;
+    height: 800px;
+  }
+  .FirstRowDetails {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .CompanyInfoRight {
+    display: none;
+  }
+  .CompanyInfoFlex .InfoText {
+    margin-right: 12rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CompanyInfoLeft {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 716px) {
+  .InfoBox {
+    width: 400px;
+    height: 1350px;
+  }
+  .CompanyInfoFlex .InfoText {
+    margin-right: 6rem;
+  }
+  .LastRowDetails {
+    flex-direction: column;
+    padding: 0;
+  }
+  .CompanyInfoLeft {
+    margin: 0;
+  }
+
+  /* .CompanyInfoFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+}
+@media only screen and (max-width: 444px) {
+  .InfoBox {
+    width: 350px;
+    height: 1550px;
+  }
+  .CompanyInfoFlex .InfoText {
+    margin-right: 4rem;
+  }
+}

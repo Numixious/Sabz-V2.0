@@ -7,27 +7,46 @@ import Training from "./Components/Training/Training";
 import Register from "./Components/Register/Register";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
-import { UserContextProvider } from "./context/userContext";
 import Dashboard from "./Components/Dashboard-Profile/Dashboard";
+import CompanyInfo from "./Components/CompanyInfo/CompanyInfo";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://greensystemsbackend.iran.liara.run:8000";
 axios.defaults.withCredentials = true;
 
 function App() {
   return (
-    <div className="App font-face-gm">
-      <BrowserRouter>
-        <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="Profile" element={<Profile />} />
-          <Route path="Training" element={<Training />} />
-          <Route path="ProductIntroduction" element={<ProductIntroduction />} />
-          <Route path="Register" element={<Register />} />
-          <Route path="Dashboard" element={<Dashboard />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <HelmetProvider>
+      <div className="App font-face-gm">
+        <Helmet>
+          <title>سامانه یکپارچه مالی و قراردادی داده پرداز سبز فرداد</title>
+          <meta
+            name="description"
+            content="سامانه یکپارچه مالی و قراردادی سبز یک داشبورد مدیریتی است که اطلاعات تخصیص و بودجه، منابع و مصارف و بطور کلی گزارشات مورد نیاز مدیر محترم را ارائه می‌دهد."
+          />
+          <meta
+            name="keywords"
+            content="حسابداری، سامانه مدیریت مالی، سامانه، مدیریت قراردادها، مدیریت مالی، قرارداد مالی"
+          />
+        </Helmet>
+
+        <BrowserRouter>
+          <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="Profile" element={<Profile />} />
+            <Route path="Training" element={<Training />} />
+            <Route
+              path="ProductIntroduction"
+              element={<ProductIntroduction />}
+            />
+            <Route path="Register" element={<Register />} />
+            <Route path="Dashboard" element={<Dashboard />} />
+            <Route path="CompanyInfo" element={<CompanyInfo />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </HelmetProvider>
   );
 }
 

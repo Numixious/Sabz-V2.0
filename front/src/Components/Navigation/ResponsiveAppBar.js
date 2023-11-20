@@ -118,6 +118,9 @@ function ResponsiveAppBar() {
                   <Link to="/Register" className="">
                     ثبت نام
                   </Link>
+                  <Link to="/CompanyInfo" className="">
+                    مشخصات شرکت
+                  </Link>
                 </Typography>
               </MenuItem>
             </Menu>
@@ -154,6 +157,9 @@ function ResponsiveAppBar() {
             </Link>
             <Link to="/Training" className="NavBarLinks">
               آموزش
+            </Link>
+            <Link to="/CompanyInfo" className="NavBarLinks">
+              مشخصات شرکت
             </Link>
             <Link to="/Profile" className="NavBarLinks">
               حساب کاربری

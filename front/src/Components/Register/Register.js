@@ -29,11 +29,14 @@ function Register() {
     event.preventDefault();
     const { name, email, password } = data;
     try {
-      const { data } = await axios.post("/Register", {
-        name,
-        email,
-        password,
-      });
+      const { data } = await axios.post(
+        "https://greensystemsbackend.iran.liara.run/Register",
+        {
+          name,
+          email,
+          password,
+        }
+      );
       if (data.error) {
         toast.error(data.error);
       } else {

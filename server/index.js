@@ -5,9 +5,6 @@ const { mongoose } = require("mongoose");
 const cookieParser = require("cookie-parser");
 // DB Connection
 const app = express();
-import helmet from "helmet";
-
-app.use(helmet());
 
 mongoose
   .connect(process.env.MONGO_URL)

@@ -5,6 +5,10 @@
   align-items: center;
   margin-top: 5rem;
 }
+
+.Container h1 {
+  font-size: 2rem;
+}
 .VideoPlayer {
   display: flex;
   justify-content: center;

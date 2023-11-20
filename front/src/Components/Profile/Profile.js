@@ -32,7 +32,7 @@ function Profile() {
     e.preventDefault();
     const { email, password } = data;
     try {
-      const { data } = await axios.post("/Profile", {
+      const { data } = await axios.post("https://greensystems.ir/Profile", {
         email,
         password,
       });
