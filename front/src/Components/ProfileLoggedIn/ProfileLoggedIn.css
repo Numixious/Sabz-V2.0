@@ -1,0 +1,92 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Container h1 {
+  margin-bottom: 2rem;
+}
+.ProfileLoggedIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #88e0d0;
+  border-radius: 1.4rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+
+  padding: 2rem 2rem;
+  direction: rtl;
+}
+.ProfileLoggedInFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProfileLoggedInRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  flex-direction: column;
+}
+.ProfileLoggedInLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ItemsMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  padding: 1.7rem 0;
+}
+
+.Items {
+  margin-right: 4rem;
+  background-color: #d68438;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.4rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  margin-right: 4rem;
+  transform: translateX(100);
+}
+.Age {
+  margin-top: 1rem;
+}
+.Inputs {
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.InputsTitle {
+  padding: 0.3rem 1rem;
+  margin-top: 1.5rem;
+}
+.SubmitButton {
+  background-color: #7ac38f;
+  display: flex;
+  justify-content: center;
+}
+.BirthDate {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.SecondRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

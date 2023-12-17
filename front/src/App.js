@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast";
 import Dashboard from "./Components/Dashboard-Profile/Dashboard";
 import CompanyInfo from "./Components/CompanyInfo/CompanyInfo";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import ProfileLoggedIn from "./Components/ProfileLoggedIn/ProfileLoggedIn";
 
 axios.defaults.baseURL = "https://greensystemsbackend.iran.liara.run:8000";
 axios.defaults.withCredentials = true;
@@ -43,6 +44,7 @@ function App() {
             <Route path="Register" element={<Register />} />
             <Route path="Dashboard" element={<Dashboard />} />
             <Route path="CompanyInfo" element={<CompanyInfo />} />
+            <Route path="ProfileLoggedIn" element={<ProfileLoggedIn />} />
           </Routes>
         </BrowserRouter>
       </div>
